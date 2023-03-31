@@ -1,0 +1,295 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos de la sección inicio */
+.inicio {
+  position: relative;
+}
+
+.perfil {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.perfil img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 3px solid white;
+}
+
+.perfil .perfil1,
+.perfil .perfil2 {
+    margin-left: 20px;
+
+}
+
+.perfil .perfil1 {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.centrado .perfil2 {
+    transition: rotate3d(0, 1, 0, -180deg);
+}
+
+.perfil {
+    position: relative;
+    transition: all 1s ease;
+    transform: perspective(600px);
+    transform-origin: 100% 50%;
+    transform-style: preserve-3d;
+    margin-right: 10px;
+    max-width: 15%;
+}
+
+.perfil:hover {
+    transform: perspective(600px) rotateY(-180deg) translateX(100%);
+}
+
+
+.contenedor {
+  position: relative;
+}
+
+.contenedor img {
+  width: 100%;
+  height: auto;
+}
+
+.centrado {
+  position: absolute;
+  top: 72%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(8, 0, 0);
+  text-shadow: 1px 1px 5px rgb(54, 45, 45);
+}
+
+/* Estilos de la sección título */
+.titulo {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f2f2f2;
+  font-size: 120%;
+}
+
+.borde {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 5%;
+  font-size: 115%;
+}
+
+/* Estilos de la sección descripción */
+.descripcion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.descripcion {
+  display: flex;
+  margin-top: 5%;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: rgb(39, 39, 199);
+  max-width: 100%;
+
+}
+
+.texto {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
+  padding-left: 25px;
+  text-align: left;
+  color: blanchedalmond;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  margin-inline-start: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(205, 205, 228);
+  max-width: 100%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav a {
+  font-weight: bold;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+.descripcion img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.texto {
+  flex-basis: calc(50% - 50px);
+  max-width: 500px;
+  padding: 0 50px;
+  text-align: justify;
+}
+
+
+.proyectos {
+  padding: 50px;
+}
+
+.rejilla {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.columna h3 {
+  font-size: 1.5em;
+}
+
+.boton-secundario {
+  background-color: #0077c2;
+  color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.boton-secundario:hover {
+  background-color: #00578a;
+}
+
+/* Estilos para la sección de habilidades */
+
+.habilidades {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+
+.habilidades h2 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.habilidades ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.habilidades li {
+  background-color: #0077c2;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5em;
+  height: 100px;
+  line-height: 100px;
+  margin: 10px;
+  text-align: center;
+  width: 100px;
+}
+
+/* Estilos de la sección botones */
+.botones {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f2f2f2;
+}
+
+.boton1 {
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn1, .btn2 {
+  display: inline;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: double;
+  margin: 10px;
+  transition: all 0.2s;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.btn2 {
+  padding: 30%;
+}
+
+.btn1:hover, .btn2:hover {
+  background-color: #3e8e41;
+  box-shadow: 1px 1px 10px grey;
+}
+
+.whatsapp img {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Estilos del footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
